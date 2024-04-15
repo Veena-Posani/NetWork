@@ -1,4 +1,4 @@
-#NetWork - Job Search Management System
+# NetWork - Job Search Management System
 
 The NetWork project is a Job Search Management System that helps Candidates view jobs and apply for jobs, and the recruiter will post jobs and view candidates who have applied for the job. This system has three specific roles i.e., candidate, recruiter, and admin. To develop the system HTML, CSS, JAVASCRIPT, and PHP are used for the web interface. XAMPP web server is used to host applications.
 

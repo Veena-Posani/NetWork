@@ -1,0 +1,48 @@
+.background {
+    background-image: url('background.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	z-index: -1;
+	background-size: 85%;
+}        
+.container1 {
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding: 100px;
+}
+.container3 {
+    text-align: center;
+    color: white;
+    padding: 100px;
+    margin-top: -50px;
+}
+.form-group input {
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: 8px;
+}
+.select{
+    width: 37%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: 8px;
+	color: #696969db;
+}
+.button {
+    background-color: #3498db;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin:6.5px;	
+	padding: 10px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="RRegistration.css">
+    <title>Registration Page</title>
+	<script>
+		function validateForm() {
+			var phoneNumber = document.getElementById("contact").value;
+			var password = document.getElementById("password").value;
+			if (phoneNumber.length < 12 || phoneNumber.length > 12) {
+				alert("Phone number must be 10 digits and include + and country code.");
+				return false;
+			}
+			if (password.length < 8) {
+				alert("Password must be at least 8 characters long.");
+				return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<div class="background"></div>	
+	<div class="container3">	
+    <h1>Recruiter Registration</h1>	
+    <form action="../NetWork/Rregistration.php" method="post" onsubmit="return validateForm()">
+		<div class="form-group">
+			<input type="text" id="first_name" name="first_name" required placeholder="First Name">
+			<input type="text" id="last_name" name="last_name" required placeholder="Last Name"><br><br>
+			<input type="text" id="contact" name="contact" required placeholder="Contact">
+			<input type="email" id="email" name="email" required placeholder="E-mail"><br><br>
+			<select name="org" id="org" class="select" required>
+				<option value="None">Organization</option>
+				<option value="Tesla">Tesla</option>
+				<option value="Amazon">Amazon</option>
+				<option value="Dr.Reddys">Dr.Reddys</option>
+				<option value="Netflix">Netflix</option>
+				<option value="Samsung">Samsung</option>
+				<option value="SpaceX">SpaceX</option>
+				<option value="Google">Google</option>
+				<option value="Baker Publishing">Baker Publishing</option>
+				<option value="Chanel">Chanel</option>
+				<option value="Dior">Dior</option>
+				<option value="Convenant Hospital">Convenant Hospital</option>
+				<option value="Aecom">Aecom</option>
+			</select>
+			<select type="text" id="position" name="position" class="select" required>
+				<option value="None">Position</option>
+				<option value="Hiring Manager">Hiring Manager</option>
+				<option value="HR Lead">HR Lead</option>
+				<option value="Supervisor">Supervisor</option>
+				<option value="Head of Human Resources'">Head of Human Resources</option>
+				<option value="CEO">CEO</option>
+				<option value="Owner">Owner</option>
+				<option value="Core Team Member">Core Team Member</option>
+			</select>	<br></br>
+			<div>
+				<input type="password" id="password" name="password" required placeholder="Password">	
+				<button type="submit" value="Register" class="button">Register</button>
+			</div>
+			
+		</div>
+    </form>
+	</div>	
+</body>
+</html>

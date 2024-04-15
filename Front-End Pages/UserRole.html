@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Page.css">
+    <title>User Role</title>
+    <script>
+        function redirectToRegistration() {
+            const userSelect = document.getElementById("user");
+            const selectedRole = userSelect.value;
+            if (selectedRole === "Candidate") {
+                window.location.href = "CRegistration.html";
+            } else if (selectedRole === "Recruiter") {
+                window.location.href = "RRegistration.html"; 
+            }
+        }
+    </script>
+</head>
+<body>
+	<div class="background"></div>
+    <div class="container3">
+        <h1>Select User</h1>	
+		<select name="user" id="user" class="select" onchange="redirectToRegistration()">
+			<option value="">User</option>
+			<option value="Candidate">Candidate</option>
+			<option value="Recruiter">Recruiter</option>
+		</select>					
+	</div>
+</body>
+</html>
+
+

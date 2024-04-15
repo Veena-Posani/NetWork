@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="CRegistration.css">
+	<script>
+		function populateDesiredPositions() {
+			const majorSelect = document.getElementById("major");
+			const desiredPositionSelect = document.getElementById("desired_position");
+			desiredPositionSelect.innerHTML = '';
+			const selectedMajor = majorSelect.value;
+			if (selectedMajor === "Mechanical Engineering") {
+				addOption(desiredPositionSelect, "Mechanical Engineer", "Mechanical Engineer");
+				addOption(desiredPositionSelect, "Design Enigneer", "Design Engineer");
+				addOption(desiredPositionSelect, "Battery Design Engineer", "Battery Design Engineer");
+				addOption(desiredPositionSelect, "Product Mechanical Engineer", "Product Mechanical Engineer");
+			}
+			else if (selectedMajor === "Electrical Engineering") {
+				addOption(desiredPositionSelect, "Substation Field Engineer", "Substation Field Engineer");
+				addOption(desiredPositionSelect, "Equipment Engineer", "Equipment Engineer");
+				addOption(desiredPositionSelect, "Electrical Controls Engineer", "Electrical Controls Engineer");
+				addOption(desiredPositionSelect, "Custom Circuit Engineer", "Custom Circuit Engineer");
+			}
+			else if (selectedMajor === "Civil Engineering") {
+				addOption(desiredPositionSelect, "Field Engineer", "Field Engineer");
+				addOption(desiredPositionSelect, "Structural Engineer", "Structural Engineer");
+				addOption(desiredPositionSelect, "Assitant City Engineer", "Assistant City Engineer");
+				addOption(desiredPositionSelect, "des_engineer", "Design Engineer Land Development");
+			}
+			else if (selectedMajor === "Computer Science") {
+				addOption(desiredPositionSelect, "data_sci", "Data Scientist");
+				addOption(desiredPositionSelect, "sw_engineer", "Software Engineer");
+				addOption(desiredPositionSelect, "full_stack_engineer", "Full Stack Developer");
+				addOption(desiredPositionSelect, "test_engineer", "Testing Engineer");
+    		}
+			else if (selectedMajor === "Finance") {
+				addOption(desiredPositionSelect, "fin_analyst", "Financial Analyst");
+				addOption(desiredPositionSelect, "loan_adm_analyst", "Loan Administration Analyst");
+				addOption(desiredPositionSelect, "fin_manager", "Finance Manager");
+				addOption(desiredPositionSelect, "wel_manager", "Wealth Manager");
+			}
+			else if (selectedMajor === "Psyschology") {
+				addOption(desiredPositionSelect, "c_psychologist", "Clinical Psychologist");
+				addOption(desiredPositionSelect, "psycho", "Psychotherapist");
+				addOption(desiredPositionSelect, "m_h_counselor", "Mental Health Counselor");
+				addOption(desiredPositionSelect, "a_p_c_psy", "Assistant Professor Counseling Psychology");
+			}
+			else if (selectedMajor === "Nursing") {
+				addOption(desiredPositionSelect, "hm_inf", "Home Infusion");
+				addOption(desiredPositionSelect, "nrs", "Nurse");
+				addOption(desiredPositionSelect, "pro_duty_nrs", "Private Duty Nurse");
+				addOption(desiredPositionSelect, "reg_nrs", "Day Surgery Registered Nurse");
+			}
+			else if (selectedMajor === "Biology") {
+				addOption(desiredPositionSelect, "bio_sci_tech", "Biological Science Technician");
+				addOption(desiredPositionSelect, "reg_bio", "Regional Biologist");
+				addOption(desiredPositionSelect, "gen_eng", "Genetic Engineer");
+				addOption(desiredPositionSelect, "mol_bio", "Molecular Biologist");
+			}	
+			else if (selectedMajor === "English") {
+				addOption(desiredPositionSelect, "jour", "Journalist");
+				addOption(desiredPositionSelect, "mark_ex", "Marketing Executive");
+				addOption(desiredPositionSelect, "mus_cur", "Museum Curator");
+				addOption(desiredPositionSelect, "lib", "Librarian");
+			}
+			else if (selectedMajor === "Chemistry") {
+				addOption(desiredPositionSelect, "col_tech", "Color Technologist");
+				addOption(desiredPositionSelect, "anl_chem", "Analytical Chemist");
+				addOption(desiredPositionSelect, "crm_inv", "Crime Scene Investigator");
+				addOption(desiredPositionSelect, "biotec", "Biotechnologist");
+			}
+		}
+		function addOption(selectElement, value, text) {
+			const option = document.createElement("option");
+			option.value = value;
+			option.text = text;
+			selectElement.appendChild(option);
+		}
+	</script>
+    <title>Registration Page</title>
+</head>
+<body>
+	<div class="background"></div>	
+	<div class="container3">	
+    <h1>Candidate Registration</h1>	
+    <form action="../NetWork/Cregistration.php" method="POST">
+		<div class="form-group">
+			<input type="text" id="first_name" name="first_name" required placeholder="First Name">
+			<input type="text" id="last_name" name="last_name" required placeholder="Last Name"><br><br>
+			<input type="text" id="contact" name="contact" required placeholder="Contact">
+			<input type="email" id="email" name="email" required placeholder="E-mail"><br><br>
+			<select name="education" id="dropdown" class="select" required>
+				<option value="None">Education Level</option>
+				<option value="highschool">High School</option>
+				<option value="bachelor">Bachelor</option>
+				<option value="master">Master</option>
+				<option value="phd">PhD</option>
+				<option value="certificate">ProfessionalCertificate</option>
+			</select>
+			<select type="text" id="university" name="university" class="select" required >
+				<option value="None">University Name</option>
+				<option value="us1">us_uni_1</option>
+				<option value="us2">us_uni_2</option>
+				<option value="us3">us_uni_3</option>
+				<option value="us4">us_uni_4</option>
+				<option value="us5">us_uni_5</option>
+				<option value="ind1">ind_uni_1</option>
+				<option value="ind2">ind_uni_2</option>
+				<option value="ind3">ind_uni_3</option>
+				<option value="ind4">ind_uni_4</option>
+				<option value="ind5">ind_uni_5</option>
+				<option value="kor1">kor_uni_1</option>
+				<option value="kor2">kor_uni_2</option>
+				<option value="kor3">kor_uni_3</option>
+				<option value="kor4">kor_uni_4</option>
+				<option value="kor5">kor_uni_5</option>
+				<option value="j1">j_uni_1</option>
+				<option value="j2">j_uni_2</option>
+				<option value="j3">j_uni_3</option>
+				<option value="j4">j_uni_4</option>
+				<option value="j5">j_uni_5</option>
+				<option value="g1">g_uni_1</option>
+				<option value="g2">g_uni_2</option>
+				<option value="g3">g_uni_3</option>
+				<option value="g4">g_uni_4</option>
+				<option value="g5">g_uni_5</option>
+				<option value="mex1">mex_uni_1</option>
+				<option value="mex2">mex_uni_2</option>
+				<option value="mex3">mex_uni_3</option>
+				<option value="mex4">mex_uni_4</option>
+				<option value="mex5">mex_uni_5</option>
+				<option value="thai1">thai_uni_1</option>
+				<option value="thai2">thai_uni_2</option>
+				<option value="thai3">thai_uni_3</option>
+				<option value="thai4">thai_uni_4</option>
+				<option value="that5">thai_uni_5'</option>
+				<option value="f1">f_uni_1</option>
+				<option value="f2">f_uni_2</option>
+				<option value="f3">f_uni_3</option>
+				<option value="f4">f_uni_4</option>
+				<option value="f5">f_uni_5</option>
+				<option value="au1">au_uni_1</option>
+				<option value="au2">au_uni_2</option>
+				<option value="au3">au_uni_3</option>
+				<option value="au4">au_uni_4</option>
+				<option value="au5">au_uni_5</option>
+				<option value="mal1">mal_uni_1</option>
+				<option value="mal2">mal_uni_2</option>
+				<option value="mal3">mal_uni_3</option>
+				<option value="mal4">mal_uni_4</option>
+				<option value="mal5">mal_uni_5</option>
+				<option value="eng1">eng_uni_1</option>
+				<option value="eng2">eng_uni_2</option>
+				<option value="eng3">eng_uni_3</option>
+				<option value="eng4">eng_uni_4</option>
+				<option value="eng5">eng_uni_5</option>
+				<option value="uae1">uae_uni_1</option>
+				<option value="uae2">uae_uni_2</option>
+				<option value="uae3">uae_uni_3</option>
+				<option value="uae4">uae_uni_4</option>
+				<option value="uae5">uae_uni_5</option>
+			</select>
+			<h6></h6>
+			<select name="major" id="major" class="select" onchange="populateDesiredPositions()" required>
+				<option value="None">Major</option>
+				<option value="Mechanical Engineering">Mechanical Engineering</option>
+				<option value="Electrical Engineering">Electrical Engineering</option>
+				<option value="Civil Engineering">Civil Engineering</option>
+				<option value="Computer Science">Computer Science</option>
+				<option value="Finance">Finance</option>
+				<option value="Psyschology">Psyschology</option>
+				<option value="Nursing">Nursing</option>
+				<option value="Biology">Biology</option>
+				<option value="English">English</option>
+				<option value="Chemistry">Chemistry</option>
+			</select>
+			<select id="desired_position" name="desired_position" class="select" required>
+				<option value="">Desired Position</option>
+			</select><br><br>
+			<select id="nation" name="nation" class="select" required>
+				<option value="None">Nationality</option>
+				<option value="us">United states</option>
+				<option value="japan">Japan</option>
+				<option value="thailand">Thailand</option>
+				<option value="india">India</option>
+				<option value="mexico">Mexico</option>
+				<option value="uae">UAE</option>
+				<option value="germany">Germany</option>
+				<option value="england">England</option>
+				<option value="france">France</option>
+				<option value="malaysia">Malaysia</option>
+			</select>
+			<input type="password" id="password" name="password" required placeholder="Password"><br><br>
+			<input type="submit" value="Register" class="button">
+		</div>
+    </form>
+	</div>	
+</body>
+</html>

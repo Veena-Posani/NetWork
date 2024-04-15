@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Home.css">
+    <title>Home Page</title>
+</head>
+<body>
+	<div class="background"></div>
+    <div class="container1">
+        <div class="left-center">
+            <h1>NetWork</h1>
+			<div class="image-with-text">
+				<img src="logo.jpeg"> 
+			</div>
+        </div>
+		<div class="right-center">
+			<form action="../NetWork/login.php" method="POST">								
+				<div class="white-box"></div>
+				<div class="container2">
+					<h1>Login As</h1>	
+					<select name="join" id="join">
+						<option value="Candidate">Candidate</option>
+						<option value="Recruiter">Recruiter</option>
+					</select>
+					<div class="form-group">
+						<input type="text" id="username" name="username" required placeholder="E-mail">
+						<p></p>
+						<input type="password" id="password" name="password" required placeholder="Password">
+					</div>
+					<button class="button" type="submit">Login</button>			
+					<p>
+						New User? <a href="UserRole.html" class="link">Create an Account</a>
+					</p>
+				</div>
+			</form>         
+		</div>        
+	</div>
+    <?php
+        session_start();
+        if(isset($_SESSION['login_error']) && $_SESSION['login_error'] === true){
+            $_SESSION['login_error'] = false;
+        }
+    ?>
+    
+</body>
+
+</html>
+

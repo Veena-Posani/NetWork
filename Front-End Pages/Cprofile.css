@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+.background {
+    background-image: url('background.jpeg'); 
+    background-size: cover;
+    filter: blur(8px); 
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+.top-menu {
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 0;
+    width: 100%;
+}
+.icon{
+	border-radius: 5px;
+    width: 35px;
+    height: 28px;
+    margin-left: 50px;
+    margin-top: 4px;
+}
+.top-menu a {
+    float: left;
+    display: block;
+    color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 20px 10px;
+    text-decoration: none;
+}
+.middle-panel {
+    margin-top: -5px;
+    margin-left: 100px;
+    padding: 20px;
+}
+.form-group {
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: 85px;
+}
+.select{
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: -10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+.filters {
+    margin-top: 20px;
+}
+
+.filter-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-option {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.filter-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.right-panel {
+    float: right;
+    width: 300px;
+    padding: 24px;
+    margin-top: -312px;
+    margin-right: 38px;
+    color: #f0f0f0;
+}
+
+.white {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.bottom-panel {
+    margin-top: 7px;
+    color: #f0f0f0;
+    width: 800px;
+    margin-left: 25px;;
+}
+
+.radd {
+    color: #333;
+}
+
+.white2 {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}

@@ -13,7 +13,7 @@ NetWork is a three-role job search platform built with HTML, CSS, JavaScript, an
 ## Key Features by Role:
 ### For Candidates:
 
-Browse recently added jobs and personalized recommendations
+. Browse recently added jobs and personalized recommendations
 Search and filter jobs based on preferences
 Apply for positions and track application status
 Receive notifications about interview rounds and results

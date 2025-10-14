@@ -13,21 +13,21 @@ NetWork is a three-role job search platform built with HTML, CSS, JavaScript, an
 ## Key Features by Role:
 ### For Candidates:
 
-'Browse recently added jobs and personalized recommendations'
-Search and filter jobs based on preferences
-Apply for positions and track application status
-Receive notifications about interview rounds and results
-Manage profile settings
+- Browse recently added jobs and personalized recommendations
+- Search and filter jobs based on preferences
+- Apply for positions and track application status
+- Receive notifications about interview rounds and results
+- Manage profile settings
 
 ### For Recruiters:
 
-Create profiles and post job openings
-View posted jobs and applicant lists
-Review candidate profiles and make hiring decisions
-Send interview invitations with round links
-Receive notifications when candidates complete interview rounds
-Send job offers or rejection notices
-Manage profile settings
+- Create profiles and post job openings
+- View posted jobs and applicant lists
+- Review candidate profiles and make hiring decisions
+- Send interview invitations with round links
+- Receive notifications when candidates complete interview rounds
+- Send job offers or rejection notices
+- Manage profile settings
 
 ## Workflow:
 The system facilitates a complete hiring cycle from job posting → candidate application → interview rounds → final offer, with bidirectional notifications keeping both parties informed at each stage.

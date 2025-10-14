@@ -7,3 +7,27 @@ The candidate can view recently added jobs, view job recommendations, and view t
 The recruiter can create a new profile, post a new job, view the posted job, and view the candidate's applicants for the specific job. They can either invite or reject the candidate based on the candidate's profile. If the recruiter sends an invite, the candidate will receive a notification of the job round link, and they will either attempt or decline the job. If the candidate attempts the job round and clicks marked as completed, the recruiter will receive a notification from the candidate that they attempted the interview round. Lastly, if the candidate has met all the conditions, the recruiter will send a job offer or they will receive a rejected offer. The recruiter can also view the profile and change the profile in settings.
 
 The objective of this project is to provide a user-friendly interface for candidates to find jobs and apply for jobs, and for recruiters to post jobs and find the best candidates for the job. The significance of the project is to perform a smooth job search process for the candidates and to find a good recruitment platform for the recruiters.
+
+## Overview
+NetWork is a three-role job search platform built with HTML, CSS, JavaScript, and PHP, hosted on XAMPP server. It connects candidates with recruiters through a streamlined application process.
+## Key Features by Role:
+### For Candidates:
+
+Browse recently added jobs and personalized recommendations
+Search and filter jobs based on preferences
+Apply for positions and track application status
+Receive notifications about interview rounds and results
+Manage profile settings
+
+### For Recruiters:
+
+Create profiles and post job openings
+View posted jobs and applicant lists
+Review candidate profiles and make hiring decisions
+Send interview invitations with round links
+Receive notifications when candidates complete interview rounds
+Send job offers or rejection notices
+Manage profile settings
+
+## Workflow:
+The system facilitates a complete hiring cycle from job posting → candidate application → interview rounds → final offer, with bidirectional notifications keeping both parties informed at each stage.
